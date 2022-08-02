@@ -9,11 +9,68 @@ package grupo3java;
  * @author Ath
  */
 public class Persona {
-    private string nombre;
+    private String SEXO="hombre";
+    private String nombre;
     private int edad;
-    private float dni;
-    private boolean sexo;
+    private int dni;
+    private String sexo;
     private float peso;
     private float altura;
+
+    public Persona (){
+        nombre = "";
+        edad = 0;
+        dni = 0;
+        sexo = SEXO;
+        peso = 0.0f;
+        altura = 0.0f;           
+    }
     
+    public void setNombre (String nomb){
+        nombre = nomb;
+    }
+    
+    public String getNombre (){
+        return nombre;
+    }
+    
+    public void setEdad (int eda){
+        edad = eda;
+    }
+    
+    public int getEdad (){
+        return edad;
+    }
+    
+     public void setDni (int dn){
+        edad = dn;
+    }
+    
+    public int getDni (){
+        return dni;
+    }
+    
+    public void setSexo (String sex){
+        sexo = sex;
+    }
+    
+    public String getSexo (){
+        return sexo;
+    }
+    
+    public void setPeso (float pes){
+        peso = pes;
+    }
+    
+    public float getPeso (){
+        return peso;
+    }
+    
+        public void setAltura (float alt){
+        altura = alt;
+    }
+    
+    public float getAltura (){
+        return altura;
+    }
 }
