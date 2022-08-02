@@ -25,6 +25,24 @@ public class Persona {
         peso = 0.0f;
         altura = 0.0f;           
     }
+       public Persona (String nom, int ed, String se){
+        nombre = nom;
+        edad = ed;
+        dni = 0;
+        sexo = se;
+        peso = 0.0f;
+        altura = 0.0f;           
+    }
+    
+          public Persona (String nom, int ed, int dn, String se, float pe, float alt){
+        nombre = nom;
+        edad = ed;
+        dni = dn;
+        sexo = se;
+        peso = pe;
+        altura = alt;           
+    }
+    
     
     public void setNombre (String nomb){
         nombre = nomb;
@@ -73,4 +91,5 @@ public class Persona {
     public float getAltura (){
         return altura;
     }
+    
 }
