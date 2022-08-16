@@ -73,4 +73,34 @@ public class Persona {
     public float getAltura (){
         return altura;
     }
+    public int calcularIMC(){
+        double imc = peso/alt*alt
+        if (imc<20){
+            return -1;
+        } 
+        else{
+            if (imc<25){
+                return 0;
+            }
+            else{
+                return 1;
+            }
+        }
+    }
+    
+    public boolean esMayorDeEdad(){
+        if (edad<18){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    
+    public char comprobarSexo(char sexo){
+        if (sexo!='H'||sexo!='M'){
+            sexo='H';
+        }
+    return sexo;
+    }
 }
