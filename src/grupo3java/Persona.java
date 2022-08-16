@@ -74,7 +74,7 @@ public class Persona {
         return altura;
     }
     public int calcularIMC(){
-        double imc = peso/alt*alt
+        double imc = peso/altura*altura;
         if (imc<20){
             return -1;
         } 
